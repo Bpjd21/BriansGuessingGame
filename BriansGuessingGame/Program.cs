@@ -6,9 +6,23 @@ namespace BriansGuessingGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Adios");
-            Console.ReadKey();
+            Console.WriteLine("Please guess a number between 1 and 10.");
+            string userGuess = Console.ReadLine();
+            Console.WriteLine("You Guessed: " + userGuess);
+            
+                //if they guess 7
+                if (userGuess.Equals("7"))
+            { 
+                    //then they win
+                    Console.WriteLine("You Win!");
+            } else
+            {
+                //otherwise they lose
+                Console.WriteLine("You Lose");
+            }
+            //otherwise they lose
+      
+
         }
     }
 }
