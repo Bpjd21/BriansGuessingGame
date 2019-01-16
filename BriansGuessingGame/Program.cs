@@ -9,19 +9,17 @@ namespace BriansGuessingGame
             Console.WriteLine("Please guess a number between 1 and 10.");
             string userGuess = Console.ReadLine();
             Console.WriteLine("You Guessed: " + userGuess);
-            
-                //if they guess 7
-                if (userGuess.Equals("7"))
-            { 
-                    //then they win
-                    Console.WriteLine("You Win!");
-            } else
-            {
-                //otherwise they lose
+
+           
+            if (userGuess.Equals("7"))
+            {               
+                Console.WriteLine("You Win!");
+            }
+            else
+            {            
                 Console.WriteLine("You Lose");
             }
-            //otherwise they lose
-      
+            
 
         }
     }
